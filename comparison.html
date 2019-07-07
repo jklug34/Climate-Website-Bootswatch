@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Comparison</title>
+  <!--browser will render the width of the page at the width of its own screen-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!--Bootstrap css-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!--Link to sytle.css sheet-->
+  <link rel="stylesheet" type="text/css" href="style_bootswatch.css">
+</head>
+
+<body>
+  <!--Navigation Section-->
+  <div class="navigation">
+    <nav class="navbar navbar-expand-md navbar-light">
+      <a class="navbar-brand" style="background-color: turquoise;" href="index.html">Latitude</a>
+
+      <!-- Collapse button -->
+      <button class="navbar-toggler  border border-white" type="button" data-toggle="collapse"
+        data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Drop down Menu -->
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">Plots
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="LatvMaxTemp.html">Max Temperature</a>
+              <a class="dropdown-item" href="LatvHumidity.html">Humidity</a>
+              <a class="dropdown-item" href="LatvCloudiness.html">Cloudiness</a>
+              <a class="dropdown-item" href="LatvWindSpeed.html">Wind Speed</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="comparison.html">Comparison</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="data.html">Data</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Content Section -->
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-12 col-md-12">
+        <!-- Center Box  -->
+        <div class="box">
+          <h3 class="title">Comparison: Latitude vs X</h3>
+          <hr>
+          <p>Click any plot to get an in-depth analysis.</p>
+          <!--Set up 6/6 for two plots-->
+          <div class="container" style="padding-bottom: 40px;">
+            <div class="row">
+              <div class="col-lg-6" style="padding: 30px;">
+                <div class="title text-center">vs. Max Temperature</div>
+                <a href="LatvMaxTemp.html">
+                  <img class="panel" src="Resources\output_images\City_Lat_v_Max_Temp.png"
+                    alt="City Latitude v. Max Temperature Scatter Plot">
+                </a>
+              </div>
+              <div class="col-lg-6" style="padding: 30px;">
+                <div class="title text-center">vs. Humidity</div>
+                <a href="LatvHumidity.html">
+                  <img class="panel" src="Resources\output_images\City_Lat_v_Humidity.png"
+                    alt="City Latitude v. Humidity Scatter Plot">
+                </a>
+              </div>
+            </div>
+            <!--new row 6/6 for the next two plots below-->
+            <div class="row">
+              <div class="col-lg-6" style="padding: 30px;">
+                <div class="title text-center">vs. Cloudiness</div>
+                <a href="LatvCloudiness.html">
+                  <img class="panel" src="Resources\output_images\City_Lat_v_Cloudiness.png"
+                    alt="City Latitude v. Cloudiness Scatter Plot">
+                </a>
+              </div>
+              <div class="col-lg-6" style="padding: 30px;">
+                <div class="title text-center">vs. Wind Speed</div>
+                <a href="LatvWindSpeed.html">
+                  <img class="panel" src="Resources\output_images\City_Lat_v_Wind_Speed.png"
+                    alt="City Latitude v. Wind Speed Scatter Plot">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer">&copy; Copyright Jason Klug 2019</div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
